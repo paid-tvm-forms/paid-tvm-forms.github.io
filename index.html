@@ -1,0 +1,106 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ഫോമുകളും ലിങ്കുകളും  | Forms and Links</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h2>ഫോമുകളും ലിങ്കുകളും  | Forms and Links</h2>
+        <h3>സമാഹരിച്ചത് Parents Association for Intellectually Differently abled  (PAID)</h3>
+        
+    </header>
+
+    <div class="container">
+
+        
+
+        <section class="sections">
+            {% for section in site.data.sections %}
+            <h1 class="section-title">{{ section.displayname }}</h1>
+            <hr class="section-hr">
+            <section class="cards-grid">
+                {% for item in site.data.forms %}
+                    {% if item.file and item.section == section.id %}
+                        <div class="download-section card">
+                            <h2 class="file-title">
+                                {% if item.name %}
+                                {{ item.name }}
+                                {% else %}
+                                {{ item.file | split: '/' | last | split: '.' | first }}
+                                {% endif %}
+                            </h2>
+
+                            {% if item.desc %}
+                                <div>{{ item.desc | markdownify }}</div>
+                            {% endif %}
+
+                            <a href="{{ item.file }}" download class="download-btn">
+                                ഡൗൺലോഡ്
+                                <i class="fa-solid fa-download icon"></i>
+                            </a>
+
+                            {% if item.offi %}
+                                <div class="offi"> <a href="{{ item.offi }}">ഔദ്യോഗിക ലിങ്ക്</a> </div>
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                {% for item in site.data.resources %}
+                    {% if item.file and item.section == section.id %}
+                        <div class="download-section card">
+                            <h2 class="file-title">
+                                {% if item.name %}
+                                {{ item.name }}
+                                {% else %}
+                                {{ item.file | split: '/' | last | split: '.' | first }}
+                                {% endif %}
+                            </h2>
+
+                            {% if item.desc %}
+                                <div>{{ item.desc | markdownify }}</div>
+                            {% endif %}
+
+                            <a href="{{ item.file }}" download class="download-btn">
+                                സൈറ്റ് സന്ദർശിക്കുക
+                                <i class="fa-solid fa-link icon"></i>
+                            </a>
+
+                            {% if item.offi %}
+                                <div class="offi"> <a href="{{ item.offi }}">ഔദ്യോഗിക ലിങ്ക്</a> </div>
+                            {% endif %}
+
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                </section>
+            {% endfor %}
+        </section>
+    </div>
+
+    <footer>
+        <p style="font-size: 0.6rem; text-align: right; padding: 0; margin: 0;">Made by jcm236</p>
+    </footer>
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        document.querySelectorAll('.cards-grid').forEach(grid => {
+            new Masonry(grid, {
+                itemSelector: '.card',
+                columnWidth: 260,
+                gutter: 18,
+                fitWidth: true
+            });
+        });
+    </script> -->
+</body>
+</html>
