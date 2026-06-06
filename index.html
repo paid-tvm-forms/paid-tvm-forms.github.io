@@ -19,13 +19,11 @@
         <h3>സമാഹരിച്ചത് Parents Association for Intellectually Differently abled  (PAID)</h3>
         
     </header>
-
+    <!-- <hr class="section-hr"> -->
     <div class="container">
-
-        
-
         <section class="sections">
             {% for section in site.data.sections %}
+            <div id="{{ section.id }}">
             <h1 class="section-title">{{ section.displayname }}</h1>
             <hr class="section-hr">
             <section class="cards-grid">
@@ -85,6 +83,7 @@
                 {% endfor %}
                 </section>
             {% endfor %}
+            </div>
         </section>
     </div>
 

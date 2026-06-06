@@ -98,3 +98,10 @@ footer {
     padding-left: 1em;
 }
 
+.section-hr {
+    border: none;
+    border-radius: 2px;
+    background-color: #0056b3;
+    height: 0.1em;
+}
+
