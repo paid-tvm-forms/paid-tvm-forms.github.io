@@ -1,8 +1,28 @@
+/* Light mode values by default */
+:root {
+  --bg-color: #ffffff;
+  --primary-color: #1e6bd6;
+  --primary-hover: #0056b3;
+  --text-color: #333333;
+}
+
+/* Dark mode overrides */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --primary-color: #1e6bd6;
+    --primary-hover: #0056b3;
+    --text-color: #ffffff;
+  }
+} */
+
+
 body {
     font-family: "Ubuntu", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .container {
@@ -12,9 +32,9 @@ body {
 }
 
 header {
-    background: #1e6bd6;
+    background: var(--primary-color);
     color: #fff;
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
@@ -25,7 +45,7 @@ header h1, header h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background: #1e6bd6;
+    background: var(--primary-color);
     color: #fff;
     /* position: relative; */
     bottom: 0;
@@ -43,8 +63,9 @@ footer {
 
 
 .card {
-    background: #fff;
-    border: 1px solid #e5e5e5;
+    background: var(--bg-color);
+    box-shadow: 0 2px 8px rgb(from var(--text-color) r g b / 0.5);
+    border: 1px solid var(--text-color);
     border-radius: 10px;
     padding: 16px;
     display: flex;
@@ -60,7 +81,7 @@ footer {
 
 .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 8px var(--text-color);
 }
 
 .file-title {
@@ -78,7 +99,7 @@ footer {
     box-sizing: border-box;
     width: 100%;
     padding: 0.8rem 1rem;
-    background: #1e6bd6;
+    background: var(--primary-color);
     color: white;
     border-radius: 6px;
     text-decoration: none;
@@ -86,7 +107,7 @@ footer {
 }
 
 .download-btn:hover {
-    background: #0056b3;
+    background: var(--primary-hover);
 }
 
 .offi {
@@ -101,7 +122,72 @@ footer {
 .section-hr {
     border: none;
     border-radius: 2px;
-    background-color: #0056b3;
+    background-color: var(--primary-color);
     height: 0.1em;
 }
 
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Enables horizontal scrolling */
+    overflow-x: auto; 
+    /* Prevents items from wrapping to a new line */
+    white-space: nowrap; 
+    /* Optional: Smooth scrolling on mobile devices */
+    -webkit-overflow-scrolling: touch; 
+}
+    
+/* Optional: Hides the scrollbar track for a cleaner look */
+.navbar::-webkit-scrollbar {
+    display: none; 
+}
+.nav-logo, .nav-links {
+    list-style: none; display: flex; gap: 20px;
+}
+.navbar a { 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 0.8em 1em;
+
+}
+.nav-links a:hover {
+    background-color: var(--primary-hover); 
+    border-radius: 10px; 
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.5em;
+
+  width: 2em;
+  height: 2em;
+  border: none;
+  border-radius: 50%;
+
+  background: var(--primary-color);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+
+  z-index: 9999; /* keeps it above most elements */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+}
+
+.floating-btn:hover {
+    background: var(--primary-hover);
+}
+
+.disclaimer {
+    font-size: small;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
