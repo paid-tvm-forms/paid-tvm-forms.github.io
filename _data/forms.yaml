@@ -23,7 +23,12 @@
 
 - file: pdf/special casual leave.pdf
   name: സ്‌പെഷ്യൽ കാഷ്വൽ ലീവ്  
-  desc: "സ്‌പെഷ്യൽ കാഷ്വൽ ലീവ് "
+  desc: "സ്‌പെഷ്യൽ കാഷ്വൽ ലീവ്"
+  section: govt-orders
+
+- file: pdf/differently abled children's parents transfer.pdf
+  name: പൊതുസ്ഥലംമാറ്റം ഒഴിവ്  
+  desc: "പൊതുസ്ഥലംമാറ്റം ഒഴിവ്"
   section: govt-orders
 
 
