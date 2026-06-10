@@ -2,6 +2,7 @@
   name: ആശ്വാസകിരണം - അപേക്ഷാ ഫോമുകൾ
   desc: "ആശ്വാസകിരണം - അപേക്ഷാ ഫോമുകൾ"
   offi: https://socialsecuritymission.gov.in/application-forms/
+  section: aswsakiranam
 
 - file: pdf/Aswsakiranam Life Certificate.pdf
   name: ആശ്വാസകിരണം ലൈഫ് സർട്ടിഫിക്കറ്റ്
