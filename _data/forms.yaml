@@ -18,6 +18,11 @@
   desc: "ഭിന്നശേഷിക്കാർക്ക് വാഹന ടോൾ ഒഴിവ്"
   section: appln-forms
 
+- file: pdf/sthree-suraksha.pdf
+  name: സ്ത്രീ സുരക്ഷാ പദ്ധതി
+  desc: "സ്ത്രീ സുരക്ഷാ പദ്ധതി"
+  section: appln-forms
+
 - file: pdf/Kerala Aswasakiranam Scheme Application form.pdf
   name: ആശ്വാസകിരണം - അപേക്ഷാ ഫോമുകൾ
   desc: "ആശ്വാസകിരണം - അപേക്ഷാ ഫോമുകൾ"
@@ -86,4 +91,27 @@
   desc: "ഭിന്നശേഷിക്കാർക്ക് ക്യൂ ഒഴിവാക്കൽ"
   section: govt-orders
 
+- file: pdf/queue-exemption.pdf
+  name: ഭിന്നശേഷിക്കാർക്ക് ക്യൂ ഒഴിവാക്കൽ 
+  desc: "ഭിന്നശേഷിക്കാർക്ക് ക്യൂ ഒഴിവാക്കൽ"
+  section: govt-orders
 
+- file: pdf/education-allowance.pdf
+  name: മാതാപിതാക്കൾക്കുള്ള വിദ്യാഭ്യാസ അലവൻസ് 
+  desc: "ഭിന്നശേഷി കുട്ടികളുടെ മാതാപിതാക്കൾക്കുള്ള വിദ്യാഭ്യാസ അലവൻസ്"
+  section: govt-orders
+
+- file: pdf/niramaya-enrollment-form.pdf
+  name: എൻറോൾമെൻ്റ് ഫോം 
+  desc: "നിരാമയ ആരോഗ്യ ഇൻഷുറൻസ് എൻറോൾമെൻ്റ് ഫോം (പുതിയതായി ചേരുന്നതിന്)"
+  section: niramaya
+
+- file: pdf/niramaya-renewal-form.pdf
+  name: റിന്യൂവൽ ഫോം  
+  desc: "നിരാമയ ആരോഗ്യ ഇൻഷുറൻസ് റിന്യൂവൽ ഫോം (ഇൻഷുറൻസ് പുതുക്കുന്നതിന്)"
+  section: niramaya
+
+- file: pdf/niramaya-claim-form.pdf
+  name: ക്ലെയിം ഫോം    
+  desc: "നിരാമയ ആരോഗ്യ ഇൻഷുറൻസ് ക്ലെയിം ഫോം"
+  section: niramaya
