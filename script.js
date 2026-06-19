@@ -35,3 +35,26 @@ searchInput.addEventListener('input', (e) => {
         section.style.display = hasVisibleCard ? '' : 'none';
     });
 });
+
+
+const btn = document.getElementById("lang-toggle");
+
+let current = "ml";
+
+function updateLang() {
+    document.querySelectorAll(".lang").forEach(el => {
+        el.classList.remove("active");
+    });
+
+    document.querySelectorAll("." + current).forEach(el => {
+        el.classList.add("active");
+    });
+}
+
+btn.addEventListener("click", () => {
+    current = current === "en" ? "ml" : "en";
+    btn.textContent = current.toUpperCase()
+    updateLang();
+});
+
+updateLang();
