@@ -15,6 +15,11 @@
   desc: "ആശ്വാസകിരണം പദ്ധതി -2018 മാർച്ച് 31 നു ശേഷം അപേക്ഷ സമർപ്പിച്ചവർക്കുള്ള പുതുക്കിയ വ്യക്തി വിവരങ്ങൾ"
   offi: https://socialsecuritymission.gov.in/application-forms/
   section: aswsakiranam
+- file: pdf/educational_scholarship_application.pdf
+  name: വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ് 
+  desc: "ശാരീരിക മാനസിക വെല്ലുവിളികൾ നേരിടുന്ന വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ്"
+  section: appln-forms
+
 
 - file: pdf/Relaxation of working hours.pdf
   name: ജോലി സമയത്തിൽ ഇളവ് 
