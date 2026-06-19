@@ -1,21 +1,3 @@
-- file: pdf/Kerala Aswasakiranam Scheme Application form.pdf
-  name: ആശ്വാസകിരണം - അപേക്ഷാ ഫോമുകൾ
-  desc: "ആശ്വാസകിരണം - അപേക്ഷാ ഫോമുകൾ"
-  offi: https://socialsecuritymission.gov.in/application-forms/
-  section: aswsakiranam
-
-- file: pdf/Aswsakiranam Life Certificate.pdf
-  name: ആശ്വാസകിരണം ലൈഫ് സർട്ടിഫിക്കറ്റ്
-  desc: "ആശ്വാസകിരണം പദ്ധതി ആനുകൂല്യം ലഭിച്ചു കൊണ്ടിരിക്കുന്ന ഗുണഭോക്താക്കൾ സമർപ്പിക്കേണ്ട ലൈഫ് സർട്ടിഫിക്കറ്റ്"
-  offi: https://socialsecuritymission.gov.in/application-forms/
-  section: aswsakiranam
-
-- file: pdf/Aswsakiranam Puthukiya Vykthi Vivrangal.pdf
-  name: ആശ്വാസകിരണം പുതുക്കിയ വ്യക്തി വിവരങ്ങൾ
-  desc: "ആശ്വാസകിരണം പദ്ധതി -2018 മാർച്ച് 31 നു ശേഷം അപേക്ഷ സമർപ്പിച്ചവർക്കുള്ള പുതുക്കിയ വ്യക്തി വിവരങ്ങൾ"
-  offi: https://socialsecuritymission.gov.in/application-forms/
-  section: aswsakiranam
-
 - file: pdf/educational_scholarship_application.pdf
   name: വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ് 
   desc: "ശാരീരിക മാനസിക വെല്ലുവിളികൾ നേരിടുന്ന വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ്"
@@ -35,6 +17,24 @@
   name: ഭിന്നശേഷിക്കാർക്ക് വാഹന ടോൾ ഒഴിവ് 
   desc: "ഭിന്നശേഷിക്കാർക്ക് വാഹന ടോൾ ഒഴിവ്"
   section: appln-forms
+
+- file: pdf/Kerala Aswasakiranam Scheme Application form.pdf
+  name: ആശ്വാസകിരണം - അപേക്ഷാ ഫോമുകൾ
+  desc: "ആശ്വാസകിരണം - അപേക്ഷാ ഫോമുകൾ"
+  offi: https://socialsecuritymission.gov.in/application-forms/
+  section: aswsakiranam
+
+- file: pdf/Aswsakiranam Life Certificate.pdf
+  name: ആശ്വാസകിരണം ലൈഫ് സർട്ടിഫിക്കറ്റ്
+  desc: "ആശ്വാസകിരണം പദ്ധതി ആനുകൂല്യം ലഭിച്ചു കൊണ്ടിരിക്കുന്ന ഗുണഭോക്താക്കൾ സമർപ്പിക്കേണ്ട ലൈഫ് സർട്ടിഫിക്കറ്റ്"
+  offi: https://socialsecuritymission.gov.in/application-forms/
+  section: aswsakiranam
+
+- file: pdf/Aswsakiranam Puthukiya Vykthi Vivrangal.pdf
+  name: ആശ്വാസകിരണം പുതുക്കിയ വ്യക്തി വിവരങ്ങൾ
+  desc: "ആശ്വാസകിരണം പദ്ധതി -2018 മാർച്ച് 31 നു ശേഷം അപേക്ഷ സമർപ്പിച്ചവർക്കുള്ള പുതുക്കിയ വ്യക്തി വിവരങ്ങൾ"
+  offi: https://socialsecuritymission.gov.in/application-forms/
+  section: aswsakiranam
 
 - file: pdf/Relaxation of working hours.pdf
   name: ജോലി സമയത്തിൽ ഇളവ് 
