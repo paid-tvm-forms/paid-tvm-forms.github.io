@@ -15,11 +15,15 @@
   desc: "ആശ്വാസകിരണം പദ്ധതി -2018 മാർച്ച് 31 നു ശേഷം അപേക്ഷ സമർപ്പിച്ചവർക്കുള്ള പുതുക്കിയ വ്യക്തി വിവരങ്ങൾ"
   offi: https://socialsecuritymission.gov.in/application-forms/
   section: aswsakiranam
+
 - file: pdf/educational_scholarship_application.pdf
   name: വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ് 
   desc: "ശാരീരിക മാനസിക വെല്ലുവിളികൾ നേരിടുന്ന വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ്"
   section: appln-forms
-
+- file: pdf/vehicle_loan.pdf
+  name: വാഹനം / സഹായ ഉപകരണ വായ്‌പ
+  desc: "വാഹനം / സഹായ ഉപകരണ വായ്‌പ"
+  section: appln-forms
 
 - file: pdf/Relaxation of working hours.pdf
   name: ജോലി സമയത്തിൽ ഇളവ് 
@@ -35,7 +39,10 @@
   name: പൊതുസ്ഥലംമാറ്റം ഒഴിവ്  
   desc: "പൊതുസ്ഥലംമാറ്റം ഒഴിവ്"
   section: govt-orders
-
+- file: pdf/special_school_vehicle_tax_reduction.pdf
+  name: സ്പെഷ്യൽ സ്കൂൾ വാഹനങ്ങളുടെ നികുതിയിളവ്    
+  desc: "സ്പെഷ്യൽ സ്കൂൾ വാഹനങ്ങളുടെ നികുതിയിളവ്  "
+  section: govt-orders
 
 
 
