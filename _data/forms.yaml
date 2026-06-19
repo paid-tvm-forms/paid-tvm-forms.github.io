@@ -20,10 +20,15 @@
   name: വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ് 
   desc: "ശാരീരിക മാനസിക വെല്ലുവിളികൾ നേരിടുന്ന വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ്"
   section: appln-forms
+  
 - file: pdf/vehicle_loan.pdf
   name: വാഹനം / സഹായ ഉപകരണ വായ്‌പ
   desc: "വാഹനം / സഹായ ഉപകരണ വായ്‌പ"
   section: appln-forms
+
+
+
+
 
 - file: pdf/Relaxation of working hours.pdf
   name: ജോലി സമയത്തിൽ ഇളവ് 
@@ -39,6 +44,7 @@
   name: പൊതുസ്ഥലംമാറ്റം ഒഴിവ്  
   desc: "പൊതുസ്ഥലംമാറ്റം ഒഴിവ്"
   section: govt-orders
+
 - file: pdf/special_school_vehicle_tax_reduction.pdf
   name: സ്പെഷ്യൽ സ്കൂൾ വാഹനങ്ങളുടെ നികുതിയിളവ്    
   desc: "സ്പെഷ്യൽ സ്കൂൾ വാഹനങ്ങളുടെ നികുതിയിളവ്  "
