@@ -26,9 +26,15 @@
   desc: "വാഹനം / സഹായ ഉപകരണ വായ്‌പ"
   section: appln-forms
 
+- file: pdf/electricity-concession.pdf
+  name: ഭിന്നശേഷിക്കാർക്കുള്ള കറണ്ട് ബിൽ ഇളവ് 
+  desc: "ഭിന്നശേഷിക്കാർക്കുള്ള കറണ്ട് ബിൽ ഇളവ്"
+  section: appln-forms
 
-
-
+- file: pdf/toll-exemption.pdf
+  name: ഭിന്നശേഷിക്കാർക്ക് വാഹന ടോൾ ഒഴിവ് 
+  desc: "ഭിന്നശേഷിക്കാർക്ക് വാഹന ടോൾ ഒഴിവ്"
+  section: appln-forms
 
 - file: pdf/Relaxation of working hours.pdf
   name: ജോലി സമയത്തിൽ ഇളവ് 
@@ -54,4 +60,20 @@
   name: യാത്രാബത്തയ്ക്ക് പകരം ഹോസ്റ്റൽ ബത്ത    
   desc: "ഹോസ്റ്റലിൽ താമസിക്കുന്ന കുട്ടികൾക്ക് യാത്രാബത്തയ്ക്ക് പകരം ഹോസ്റ്റൽ ബത്ത"
   section: govt-orders
+
+- file: pdf/specialCL_no_new_certificate.pdf
+  name: സ്‌പെഷ്യൽ കാഷ്വൽ ലീവിനായി സർട്ടിഫിക്കറ്റ് ഇളവ്   
+  desc: "ശാരീരിക മാനസിക വെല്ലുവിളികൾ നേരിടുന്ന കുട്ടികളുടെ മാതാപിതാക്കളായ സർക്കാർ ജീവനക്കാർക്ക് അനുവദിക്കുന്ന സ്പെഷ്യൽ ക്യാഷ് ലീവിന് മെഡിക്കൽ സർട്ടിഫിക്കറ്റ് ഹാജരാക്കുന്നതിൽ ഇളവ് നൽകി KSR ഭേദഗതി"
+  section: govt-orders
+
+- file: pdf/kseb_tariff_reduction_order.pdf
+  name: ഭിന്നശേഷിക്കാർക്കുള്ള കറണ്ട് ബിൽ ഇളവ്   
+  desc: "ഭിന്നശേഷിക്കാർക്കുള്ള കറണ്ട് ബിൽ ഇളവ്"
+  section: govt-orders
+
+- file: pdf/water_charge_reduction.pdf
+  name: വാട്ടർ ചാർജ് ഇളവ്   
+  desc: "വാട്ടർ കണക്ഷൻ ഉള്ള ഭിന്നശേഷിക്കാരായ ആൾക്കാർ താമസിക്കുന്ന സ്ഥാപനങ്ങൾക്കും വീട്ടിനും നൽകിക്കൊണ്ടുള്ള ഉത്തരവ്"
+  section: govt-orders
+
 
