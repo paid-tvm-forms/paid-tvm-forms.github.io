@@ -3,109 +3,119 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ഫോമുകളും ലിങ്കുകളും  | Forms & Links</title>
+    <title>ഫോമുകളും ലിങ്കുകളും | Forms & Links</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <a href="#" class="floating-btn"><i class="fa-solid fa-angles-up"></i></a>
+    <a href="#top" class="floating-btn" aria-label="Scroll to top"><i class="fa-solid fa-angles-up" aria-hidden="true"></i></a>
     <header id="top">
-        <h2>അപേക്ഷാ ഫോമുകളും ലിങ്കുകളും  | Appln Forms and Links</h2>
-        <h3>സമാഹരിച്ചത് Parents Association for Intellectually Differently abled  (PAID)</h3>
+        <h2>അപേക്ഷാ ഫോമുകളും ലിങ്കുകളും | Appln Forms and Links</h2>
+        <h3>സമാഹരിച്ചത് Parents Association for Intellectually Differently abled (PAID)</h3>
         <nav class="navbar">
             <ul class="nav-links">
                 {% for section in site.data.sections %}
-                    <li><a href="#{{ section.id }}">{{ section.displayname }}</a></li>
+                <li><a href="#{{ section.id }}">{{ section.displayname }}</a></li>
                 {% endfor %}
             </ul>
         </nav>
-        <search>
-            <form class="search-form">
-                <input type="search" id="site-search" name="q" placeholder="Search..." aria-label="Search through site content" required>
+        <div class="search-container">
+            <form class="search-form" onsubmit="return false;">
+                <input type="search" id="site-search" placeholder="Search..."
+                    aria-label="Search through site content" required>
                 <button type="submit">Search</button>
             </form>
-        </search>
+        </div>
     </header>
     <!-- <hr class="section-hr"> -->
     <div class="container">
-        <section class="sections">
+        <div class="sections">
             {% for section in site.data.sections %}
-            <div id="{{ section.id }}">
-            <h1 class="section-title">{{ section.displayname }}</h1>
-            <hr class="section-hr">
-            <section class="cards-grid">
-                {% for item in site.data.forms %}
+            <section id="{{ section.id }}">
+                <h1 class="section-title">{{ section.displayname }}</h1>
+                <hr class="section-hr">
+                <div class="cards-grid">
+                    {% for item in site.data.forms %}
                     {% if item.file and item.section == section.id %}
-                        <div class="download-section card">
-                            <h2 class="file-title">
-                                {% if item.name %}
-                                {{ item.name }}
-                                {% else %}
-                                {{ item.file | split: '/' | last | split: '.' | first }}
-                                {% endif %}
-                            </h2>
-
-                            {% if item.desc %}
-                                <div>{{ item.desc | markdownify }}</div>
+                    <div class="download-section card">
+                        <h2 class="file-title">
+                            {% if item.name %}
+                            {{ item.name }}
+                            {% else %}
+                            {{ item.file | split: '/' | last | split: '.' | first }}
                             {% endif %}
+                        </h2>
 
-                            <a href="{{ item.file }}" download class="download-btn">
-                                ഡൗൺലോഡ്
-                                <i class="fa-solid fa-download icon"></i>
-                            </a>
+                        {% if item.desc %}
+                        <div>{{ item.desc | markdownify }}</div>
+                        {% endif %}
 
-                            {% if item.offi %}
-                                <div class="offi"> <a href="{{ item.offi }}">ഔദ്യോഗിക ലിങ്ക്</a> </div>
-                            {% endif %}
+                        <a href="{{ item.file }}" download class="download-btn">
+                            ഡൗൺലോഡ്
+                            <i class="fa-solid fa-download icon" aria-hidden="true"></i>
+                        </a>
 
-                        </div>
+                        {% if item.offi %}
+                        <div class="offi"> <a href="{{ item.offi }}" target="_blank" rel="noopener noreferrer">ഔദ്യോഗിക
+                                ലിങ്ക്</a> </div>
+                        {% endif %}
+
+                    </div>
                     {% endif %}
-                {% endfor %}
-                {% for item in site.data.resources %}
-                    {% if item.file and item.section == section.id %}
-                        <div class="download-section card">
-                            <h2 class="file-title">
-                                {% if item.name %}
-                                {{ item.name }}
-                                {% else %}
-                                {{ item.file | split: '/' | last | split: '.' | first }}
-                                {% endif %}
-                            </h2>
-
-                            {% if item.desc %}
-                                <div>{{ item.desc | markdownify }}</div>
+                    {% endfor %}
+                    {% for item in site.data.resources %}
+                    {% if item.link and item.section == section.id %}
+                    <div class="download-section card">
+                        <h2 class="file-title">
+                            {% if item.name %}
+                            {{ item.name }}
+                            {% else %}
+                            {{ item.link | split: '/' | last | split: '.' | first }}
                             {% endif %}
+                        </h2>
 
-                            <a href="{{ item.file }}" download class="download-btn">
-                                സൈറ്റ് സന്ദർശിക്കുക
-                                <i class="fa-solid fa-link icon"></i>
-                            </a>
+                        {% if item.desc %}
+                        <div>{{ item.desc | markdownify }}</div>
+                        {% endif %}
 
-                            {% if item.offi %}
-                                <div class="offi"> <a href="{{ item.offi }}">ഔദ്യോഗിക ലിങ്ക്</a> </div>
-                            {% endif %}
+                        <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer" class="download-btn">
+                            സൈറ്റ് സന്ദർശിക്കുക
+                            <i class="fa-solid fa-link icon" aria-hidden="true"></i>
+                        </a>
 
-                        </div>
+                        {% if item.offi %}
+                        <div class="offi"> <a href="{{ item.offi }}" target="_blank" rel="noopener noreferrer">ഔദ്യോഗിക
+                                ലിങ്ക്</a> </div>
+                        {% endif %}
+
+                    </div>
                     {% endif %}
-                {% endfor %}
-                </section>
+                    {% endfor %}
+                </div>
+            </section>
             {% endfor %}
-            </div>
-        </section>
+
+        </div>
     </div>
 
     <footer>
         <p class="disclaimer">
-            ഈ വെബ്‌സൈറ്റ് രക്ഷിതാക്കൾക്ക് സഹായമാകുന്നതിനായി സന്നദ്ധപ്രവർത്തകർ തയ്യാറാക്കിയ ഒരു സ്വതന്ത്ര വിവരശേഖരം മാത്രമാണ്, 
-            ഇതിന് യാതൊരുവിധ സർക്കാർ ഏജൻസികളുമായും ഔദ്യോഗിക ബന്ധമില്ല. 
-            ഇവിടെ നൽകിയിട്ടുള്ള ഫോമുകൾ പൊതുവായ അറിവിലേക്കായി മാത്രമുള്ളതാണ്; 
-            ഇതിലെ തെറ്റുകൾക്കോ പഴയ വിവരങ്ങൾക്കോ സൈറ്റ് നടത്തിപ്പുകാർ ഉത്തരവാദികളായിരിക്കില്ല. 
+            ഈ വെബ്‌സൈറ്റ് രക്ഷിതാക്കൾക്ക് സഹായമാകുന്നതിനായി സന്നദ്ധപ്രവർത്തകർ തയ്യാറാക്കിയ ഒരു സ്വതന്ത്ര വിവരശേഖരം
+            മാത്രമാണ്,
+            ഇതിന് യാതൊരുവിധ സർക്കാർ ഏജൻസികളുമായും ഔദ്യോഗിക ബന്ധമില്ല.
+            ഇവിടെ നൽകിയിട്ടുള്ള ഫോമുകൾ പൊതുവായ അറിവിലേക്കായി മാത്രമുള്ളതാണ്;
+            ഇതിലെ തെറ്റുകൾക്കോ പഴയ വിവരങ്ങൾക്കോ സൈറ്റ് നടത്തിപ്പുകാർ ഉത്തരവാദികളായിരിക്കില്ല.
             ഈ രേഖകളുടെ നിലവിലെ സാധുത ഔദ്യോഗിക സർക്കാർ വകുപ്പുകളുമായി പരിശോധിച്ചുറപ്പിക്കാൻ ശക്തമായി നിർദ്ദേശിക്കുന്നു.
         </p>
         <p style="font-size: 0.6em; text-align: left; padding: 0; margin: 0;">Made by jcm236</p>
@@ -123,4 +133,5 @@
     </script> -->
     <script src="script.js"></script>
 </body>
+
 </html>

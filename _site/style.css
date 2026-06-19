@@ -195,6 +195,7 @@ footer {
 
 .search-form {
   display: flex;
+  margin: 1em;
   margin-left: auto;
   max-width: 400px;
   width: 100%;

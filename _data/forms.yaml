@@ -91,11 +91,6 @@
   desc: "ഭിന്നശേഷിക്കാർക്ക് ക്യൂ ഒഴിവാക്കൽ"
   section: govt-orders
 
-- file: pdf/queue-exemption.pdf
-  name: ഭിന്നശേഷിക്കാർക്ക് ക്യൂ ഒഴിവാക്കൽ 
-  desc: "ഭിന്നശേഷിക്കാർക്ക് ക്യൂ ഒഴിവാക്കൽ"
-  section: govt-orders
-
 - file: pdf/education-allowance.pdf
   name: മാതാപിതാക്കൾക്കുള്ള വിദ്യാഭ്യാസ അലവൻസ് 
   desc: "ഭിന്നശേഷി കുട്ടികളുടെ മാതാപിതാക്കൾക്കുള്ള വിദ്യാഭ്യാസ അലവൻസ്"
