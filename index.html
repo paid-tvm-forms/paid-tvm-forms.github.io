@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <a href="#top" class="floating-btn" aria-label="Scroll to top"><i class="fa-solid fa-angles-up" aria-hidden="true"></i></a>
+    <a href="#top" class="floating-btn" aria-label="Scroll to top"><i class="fa-solid fa-angles-up"
+            aria-hidden="true"></i></a>
     <header id="top">
         <h2>അപേക്ഷാ ഫോമുകളും ലിങ്കുകളും | Appln Forms and Links</h2>
         <h3>സമാഹരിച്ചത് Parents Association for Intellectually Differently abled (PAID)</h3>
@@ -44,7 +45,7 @@
                 <div class="cards-grid">
                     {% for item in site.data.forms %}
                     {% if item.file and item.section == section.id %}
-                    <div class="download-section card">
+                    <div class="download-section card" data-keywords="{{ item.search-keywords }}">
                         <h2 class="file-title">
                             {% if item.name %}
                             {{ item.name }}
@@ -70,9 +71,10 @@
                     </div>
                     {% endif %}
                     {% endfor %}
+
                     {% for item in site.data.resources %}
                     {% if item.link and item.section == section.id %}
-                    <div class="download-section card">
+                    <div class="download-section card" data-keywords="{{ item.search-keywords }}">
                         <h2 class="file-title">
                             {% if item.name %}
                             {{ item.name }}

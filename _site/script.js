@@ -1,9 +1,9 @@
 const searchInput = document.getElementById('site-search');
 
 function normalize(text) {
-    return text
+    return (text || "")
         .toLowerCase()
-        .replace(/[_-]/g, ' '); // convert _ and - to spaces
+        .replace(/[_-]/g, ' ');
 }
 
 searchInput.addEventListener('input', (e) => {
@@ -17,12 +17,14 @@ searchInput.addEventListener('input', (e) => {
             const cardText = normalize(card.textContent);
 
             const links = [...card.querySelectorAll('a')]
-                .map(link => normalize(link.href))
+                .map(a => normalize(a.href))
                 .join(' ');
 
-            const searchableContent = `${cardText} ${links}`;
+            const keywords = normalize(card.dataset.keywords);
 
-            if (searchableContent.includes(value)) {
+            const searchable = `${cardText} ${links} ${keywords}`;
+
+            if (searchable.includes(value)) {
                 card.style.display = '';
                 hasVisibleCard = true;
             } else {
