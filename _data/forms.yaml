@@ -20,7 +20,7 @@
   name: വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ് 
   desc: "ശാരീരിക മാനസിക വെല്ലുവിളികൾ നേരിടുന്ന വിദ്യാർത്ഥികൾക്കുള്ള സ്‌കോളർഷിപ്പ്"
   section: appln-forms
-  
+
 - file: pdf/vehicle_loan.pdf
   name: വാഹനം / സഹായ ഉപകരണ വായ്‌പ
   desc: "വാഹനം / സഹായ ഉപകരണ വായ്‌പ"
@@ -47,8 +47,11 @@
 
 - file: pdf/special_school_vehicle_tax_reduction.pdf
   name: സ്പെഷ്യൽ സ്കൂൾ വാഹനങ്ങളുടെ നികുതിയിളവ്    
-  desc: "സ്പെഷ്യൽ സ്കൂൾ വാഹനങ്ങളുടെ നികുതിയിളവ്  "
+  desc: "സ്പെഷ്യൽ സ്കൂൾ വാഹനങ്ങളുടെ നികുതിയിളവ്"
   section: govt-orders
 
-
+- file: pdf/travel_allowance_hostel_students.pdf
+  name: യാത്രാബത്തയ്ക്ക് പകരം ഹോസ്റ്റൽ ബത്ത    
+  desc: "ഹോസ്റ്റലിൽ താമസിക്കുന്ന കുട്ടികൾക്ക് യാത്രാബത്തയ്ക്ക് പകരം ഹോസ്റ്റൽ ബത്ത"
+  section: govt-orders
 
