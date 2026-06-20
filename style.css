@@ -1,9 +1,9 @@
 /* Light mode values by default */
 :root {
-  --bg-color: #ffffff;
-  --primary-color: #1e6bd6;
-  --primary-hover: #0056b3;
-  --text-color: #333333;
+    --bg-color: #ffffff;
+    --primary-color: #1e6bd6;
+    --primary-hover: #0056b3;
+    --text-color: #333333;
 }
 
 /* Dark mode overrides */
@@ -15,6 +15,10 @@
     --text-color: #ffffff;
   }
 } */
+
+html {
+  scroll-behavior: smooth;
+}
 
 
 body {
@@ -38,7 +42,8 @@ header {
     text-align: center;
 }
 
-header h1, header h2 {
+header h1,
+header h2 {
     margin: 0;
 }
 
@@ -57,7 +62,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
     gap: 18px;
-    align-items: start; 
+    align-items: start;
     padding: 20px;
 }
 
@@ -95,7 +100,7 @@ footer {
     display: inline-block;
     text-align: center;
     font-size: large;
-    
+
     box-sizing: border-box;
     width: 100%;
     padding: 0.8rem 1rem;
@@ -132,53 +137,60 @@ footer {
     justify-content: space-between;
     align-items: center;
     /* Enables horizontal scrolling */
-    overflow-x: auto; 
+    overflow-x: auto;
     /* Prevents items from wrapping to a new line */
-    white-space: nowrap; 
+    white-space: nowrap;
     /* Optional: Smooth scrolling on mobile devices */
-    -webkit-overflow-scrolling: touch; 
+    -webkit-overflow-scrolling: touch;
 }
-    
+
 /* Optional: Hides the scrollbar track for a cleaner look */
 .navbar::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
-.nav-logo, .nav-links {
-    list-style: none; display: flex; gap: 20px;
+
+.nav-logo,
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
-.navbar a { 
-    color: #fff; 
-    text-decoration: none; 
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
     padding: 0.8em 1em;
 
 }
+
 .nav-links a:hover {
-    background-color: var(--primary-hover); 
-    border-radius: 10px; 
+    background-color: var(--primary-hover);
+    border-radius: 10px;
 }
 
 .floating-btn {
-  position: fixed;
-  bottom: 0.5em;
-  right: 0.5em;
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
 
-  width: 2em;
-  height: 2em;
-  border: none;
-  border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-radius: 50%;
 
-  background: var(--primary-color);
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 
-  z-index: 9999; /* keeps it above most elements */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 9999;
+    /* keeps it above most elements */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .floating-btn:hover {
@@ -194,47 +206,74 @@ footer {
 
 
 .search-form {
-  display: flex;
-  margin: 1em;
-  margin-left: auto;
-  max-width: 400px;
-  width: 100%;
-  border: 2px solid #ccc;
-  border-radius: 24px; /* Gives a modern rounded capsule look */
-  overflow: hidden;
-  font-family: sans-serif;
-  transition: border-color 0.3s ease;
+    display: flex;
+    margin: 1em;
+    margin-left: auto;
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 24px;
+    /* Gives a modern rounded capsule look */
+    overflow: hidden;
+    font-family: sans-serif;
+    transition: border-color 0.3s ease;
 }
 
 /* Changes border color when clicking into the input field */
 .search-form:focus-within {
-  border-color: #007bff;
+    border-color: var(--primary-color);
 }
 
 .search-form input[type="search"] {
-  flex: 1;
-  padding: 10px 15px;
-  border: none;
-  outline: none; /* Removes the ugly default browser outline */
-  font-size: 16px;
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    /* Removes the ugly default browser outline */
+    outline: none;
+    
+    font-size: 16px;
 }
 
 .lang-toggle {
-  padding: 10px 20px;
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  border: none;
-  border-radius: 20px;
-  padding: 0.8em 1em;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.2s ease;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8em 1em;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
 }
 
 .lang-toggle:hover {
-  background-color: var(--primary-hover);
+    background-color: var(--primary-hover);
 }
 
-.lang { display: none; }
-.lang.active { display: inline; }
+.lang {
+    display: none;
+}
+
+.lang.active {
+    display: inline;
+}
+
+
+.section-anchor {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+}
+
+.section-anchor:visited {
+    color: inherit;
+}
+
+.section-anchor:hover {
+    color: inherit;
+}
+
+.section-anchor:active {
+    color: inherit;
+}

@@ -43,7 +43,7 @@
         <div class="sections">
             {% for section in site.data.sections %}
             <section id="{{ section.id }}">
-                <h1 class="section-title">{{ section.displayname }}</h1>
+                <h1 class="section-title"><a href="#{{ section.id }}" class="section-anchor">{{ section.displayname }}</a></h1>
                 <hr class="section-hr">
                 <div class="cards-grid">
                     {% for item in site.data.forms %}
