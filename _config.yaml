@@ -1,0 +1,5 @@
+plugins:
+  - jekyll-datapage-generator
+  
+whitelist:
+  - jekyll-datapage-generator
