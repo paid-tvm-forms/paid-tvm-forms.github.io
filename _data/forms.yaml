@@ -146,4 +146,13 @@
   desc: "ശാരീരികമോ മാനസികമോ ആയ വെല്ലുവിളികൾ നേരിടുന്ന വ്യക്തികൾക്കായി ലീഗൽ ഗാർഡിയൻഷിപ്പ് (നിയമപരമായ രക്ഷാകർതൃത്വം)"
   section: legal-guardianship
 
+- file: pdf/legal_guardian_sammathapathram.pdf
+  name: സമ്മതപത്രം    
+  desc: "സമ്മതപത്രം"
+  section: legal-guardianship
+
+- file: pdf/legal_guardianship_formD_formC.pdf
+  name: ഫോം C & ഫോം D    
+  desc: "ഫോം C & ഫോം D "
+  section: legal-guardianship
 
