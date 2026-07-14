@@ -144,6 +144,6 @@
 - file: pdf/legal_guardianship_form_A.pdf
   name: അപേക്ഷ ഫോം (Form A)    
   desc: "ശാരീരികമോ മാനസികമോ ആയ വെല്ലുവിളികൾ നേരിടുന്ന വ്യക്തികൾക്കായി ലീഗൽ ഗാർഡിയൻഷിപ്പ് (നിയമപരമായ രക്ഷാകർതൃത്വം)"
-  section: legal
+  section: legal-guardianship
 
 
